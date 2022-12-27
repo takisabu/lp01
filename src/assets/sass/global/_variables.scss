@@ -1,0 +1,61 @@
+// ============================================================
+// Color
+// ============================================================
+// ----- Site Color -----
+$color-main: #333333;
+
+$color-accent: #FFA500;
+
+// ----- Back Ground Color -----
+$color-bg-base: #F5F5F5;
+
+// ----- Text Color -----
+$color-txt-base: #333333;
+
+
+// ============================================================
+// Font
+// ============================================================
+// ----- Font Family -----
+$font-base: 'Noto Sans JP', sans-serif;
+$font-ja: $font-base;
+$font-en: $font-base;
+
+// ----- Font Size -----
+$font-size-base: 16;
+
+// ----- Font Weight -----
+$font-weight-base: 400;
+$font-weight-bold: 700;
+
+// ----- Font Line Height -----
+$line-height-base: 1.5;
+
+
+// ============================================================
+// Layout
+// ============================================================
+// ----- Width -----
+$layout-width-inner-pc: 1100px;
+$layout-width-inner-sp: 768px;
+
+// ----- Height -----
+$layout-height-header-pc: 100px;
+$layout-height-header-tab: 80px;
+$layout-height-header-sp: 60px;
+
+// ----- Padding -----
+$layout-padding-side-pc: 40px;
+$layout-padding-side-sp: 16px;
+
+
+// ============================================================
+// Layer
+// ============================================================
+// ----- Layer -----
+$layer: (
+  to-top: 300,
+  header: 200,
+  footer: 100,
+  default: 1,
+);
