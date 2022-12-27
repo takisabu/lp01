@@ -1,0 +1,17 @@
+@use "variables" as v;
+
+
+// ブレークポイント
+$breakpoints: (
+  "pc": "screen and (min-width: #{v.$layout-width-inner-pc}),print",
+  "tab": "screen and (min-width: #{v.$layout-width-inner-sp}),print",
+  "tab-only": "screen and (min-width: #{v.$layout-width-inner-sp}) and (max-width: #{v.$layout-width-inner-pc - 1px}),print",
+  "sp": "screen and (max-width: #{v.$layout-width-inner-sp - 1px})",
+);
+
+// メディアクエリー
+@mixin mq($breakpoint: pc) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
