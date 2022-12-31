@@ -1,0 +1,18 @@
+@use '../global/' as global;
+
+
+.question {
+
+}
+
+.question__title {
+
+}
+
+.question__body {
+  margin-top: 40px;
+
+  @include global.mq('pc') {
+    margin-top: 60px;
+  }
+}

@@ -1,0 +1,33 @@
+@use '../global/' as global;
+
+
+.d-nav {
+
+}
+
+.d-nav__list {
+}
+
+.d-nav__item {
+  & + & {
+    margin-top: calc(25 / 667 * 100vh);
+  }
+}
+
+.d-nav__link {
+  position: relative;
+  font-size: 24px;
+  font-weight: global.$font-weight-bold;
+  padding-left: 65px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid global.$color-main;
+    left: 27px;
+    top: 55%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+}

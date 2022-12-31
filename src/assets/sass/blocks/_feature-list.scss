@@ -1,0 +1,27 @@
+@use '../global/' as global;
+
+
+.feature-list {
+}
+
+.feature-list__item {
+}
+
+.feature-list__item--01 {
+}
+
+.feature-list__item--02 {
+  margin-top: 60px;
+
+  @include global.mq('pc') {
+    margin-top: 150px;
+  }
+}
+
+.feature-list__item--03 {
+  margin-top: 60px;
+
+  @include global.mq('pc') {
+    margin-top: -50px;
+  }
+}

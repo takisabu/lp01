@@ -1,0 +1,30 @@
+@use '../global/' as global;
+
+.flow-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 335px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include global.mq('pc') {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+}
+
+.flow-list__item {
+  @include global.mq('pc') {
+    width: calc(280 / 1070 * 100%);
+  }
+
+  & + & {
+    margin-top: 60px;
+
+    @include global.mq('pc') {
+      margin-top: 0;
+    }
+  }
+}

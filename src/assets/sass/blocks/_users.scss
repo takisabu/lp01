@@ -1,0 +1,21 @@
+@use '../global/' as global;
+
+
+.users {
+
+}
+
+.users__title {
+
+}
+
+.users__body {
+  max-width: 972px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include global.mq('pc') {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,36 @@
+@use '../global/' as global;
+
+
+.drawer {
+  position: fixed;
+  z-index: global.get-layer-index("drawer");
+  background-color: global.$color-bg-main-light;
+  height: calc(100vh - global.$layout-height-header-sp);
+  width: 100vw;
+  padding-top: calc(60 / 667 * 100vh);
+  margin-top: global.$layout-height-header-sp;
+  transform: translateY(-101vh);
+  transition: all .3s ease;
+
+  &.is-active {
+    transform: translateY(0);
+  }
+}
+
+.drawer__inner {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.drawer__nav {
+}
+
+.drawer__btns {
+  margin-top: calc(50 / 667 * 100vh);
+}
+
+.drawer__btn {
+  & + & {
+    margin-top: calc(24 / 667 * 100vh);
+  }
+}

@@ -1,0 +1,53 @@
+@use '../global/' as global;
+
+
+.header {
+  position: fixed;
+  z-index: global.get-layer-index("header");
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: global.$color-bg-white;
+  height: global.$layout-height-header-sp;
+
+  @include global.mq('pc') {
+    height: global.$layout-height-header-pc;
+  }
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-right: global.$layout-padding-header-sp;
+  padding-left: global.$layout-padding-header-sp;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include global.mq('pc') {
+    max-width: global.$layout-width-header-pc;
+  }
+}
+
+.header__logo {
+  width: 71px;
+
+  @include global.mq('pc') {
+    width: 83px;
+  }
+}
+
+.header__nav {
+  display: none;
+
+  @include global.mq('pc') {
+    display: block;
+  }
+}
+
+.header__hamburger {
+  @include global.mq('pc') {
+    display: none;
+  }
+}

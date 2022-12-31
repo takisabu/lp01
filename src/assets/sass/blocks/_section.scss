@@ -1,0 +1,43 @@
+@use '../global/' as global;
+
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include global.mq('pc') {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &.section--high {
+    padding-top: 80px;
+
+    @include global.mq('pc') {
+      padding-top: 100px;
+    }
+  }
+
+  &.section--bg {
+    background-color: #F9F9F9;
+  }
+}
+
+.section__inner {
+  padding-right: global.$layout-padding-header-sp;
+  padding-left: global.$layout-padding-header-sp;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include global.mq('pc') {
+    max-width: global.$layout-width-header-pc;
+  }
+}
+
+.section__title {
+
+}
+
+.section__body {
+
+}

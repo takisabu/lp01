@@ -1,0 +1,43 @@
+@use '../global/' as global;
+
+
+.price-grid {
+  display: grid;
+  grid-template-columns: 150px 180px 180px 180px;
+  white-space: nowrap;
+  place-items: end stretch;
+
+  @include global.mq('tab') {
+    justify-content: center;
+  }
+
+  @include global.mq('pc') {
+    grid-template-columns: 240px 260px 260px 260px;
+  }
+}
+
+.price-grid__th {
+
+}
+
+.price-grid__td {
+  height: 100%;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.price-grid__td--bg {
+  background-color: global.$color-main-light;
+}
+
+.price-grid__td--strong {
+  font-size: 18px;
+  font-weight: global.$font-weight-bold;
+}
+
+.price-grid__td--head {
+  text-align: left;
+  padding-left: 18px;
+}

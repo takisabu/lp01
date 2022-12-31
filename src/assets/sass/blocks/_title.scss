@@ -1,0 +1,20 @@
+@use '../global/' as global;
+
+
+.title {
+}
+
+.title__en {
+  font-family: global.$font-en;
+  font-weight: global.$font-weight-bold;
+  color: #9F9EC1;
+  font-size: 22px;
+  text-align: center;
+}
+
+.title__ja {
+  font-size: 30px;
+  font-weight: global.$font-weight-bold;
+  color: global.$color-main;
+  text-align: center;
+}

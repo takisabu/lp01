@@ -2,15 +2,22 @@
 // Color
 // ============================================================
 // ----- Site Color -----
-$color-main: #333333;
+$color-main: #64629D;
+$color-main-light: #EDECFC;
+$color-white: #FFFFFF;
+$color-black: #000000;
 
 $color-accent: #FFA500;
 
 // ----- Back Ground Color -----
-$color-bg-base: #F5F5F5;
+$color-bg-base: $color-white;
+$color-bg-white: $color-white;
+$color-bg-main-light: $color-main-light;
 
 // ----- Text Color -----
-$color-txt-base: #333333;
+$color-txt-base: #2D2D32;
+$color-txt-light: $color-white;
+$color-txt-main: $color-main;
 
 
 // ============================================================
@@ -19,7 +26,7 @@ $color-txt-base: #333333;
 // ----- Font Family -----
 $font-base: 'Noto Sans JP', sans-serif;
 $font-ja: $font-base;
-$font-en: $font-base;
+$font-en: 'Hind', sans-serif;
 
 // ----- Font Size -----
 $font-size-base: 16;
@@ -36,17 +43,19 @@ $line-height-base: 1.5;
 // Layout
 // ============================================================
 // ----- Width -----
-$layout-width-inner-pc: 1100px;
+$layout-width-inner-pc: 1200px;
 $layout-width-inner-sp: 768px;
 
-// ----- Height -----
-$layout-height-header-pc: 100px;
-$layout-height-header-tab: 80px;
-$layout-height-header-sp: 60px;
+// ----- Header -----
+$layout-width-header-pc: 1200px;
+$layout-height-header-pc: 72px;
+$layout-height-header-tab: 62px;
+$layout-height-header-sp: 52px;
+$layout-padding-header-sp: 20px;
 
 // ----- Padding -----
 $layout-padding-side-pc: 40px;
-$layout-padding-side-sp: 16px;
+$layout-padding-side-sp: 20px;
 
 
 // ============================================================
@@ -54,8 +63,9 @@ $layout-padding-side-sp: 16px;
 // ============================================================
 // ----- Layer -----
 $layer: (
-  to-top: 300,
-  header: 200,
+  to-top: 400,
+  header: 300,
+  drawer: 200,
   footer: 100,
   default: 1,
 );
