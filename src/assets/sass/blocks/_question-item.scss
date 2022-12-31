@@ -1,0 +1,72 @@
+@use '../global/' as global;
+
+
+.question-item {
+
+}
+
+.question-item__q {
+  position: relative;
+  background-color: global.$color-main;
+  color: global.$color-txt-light;
+  font-weight: global.$font-weight-bold;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 45px;
+  border-radius: 4px;
+
+  @include global.mq('pc') {
+    font-size: 18px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 56px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "Q";
+    top: 5px;
+    left: 15px;
+    font-size: 22px;
+    font-weight: global.$font-weight-bold;
+
+    @include global.mq('pc') {
+      top: 18px;
+      left: 24px;
+    }
+  }
+}
+
+.question-item__a {
+  position: relative;
+  background-color: global.$color-white;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  border-radius: 4px;
+  margin-top: 16px;
+
+  @include global.mq('pc') {
+    margin-top: 14px;
+    font-size: 18px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 56px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "A";
+    top: 5px;
+    left: 15px;
+    font-size: 22px;
+    font-weight: global.$font-weight-bold;
+
+    @include global.mq('pc') {
+      top: 18px;
+      left: 24px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@use '../global/' as global;
+
+
+.users-list {
+  display: grid;
+  grid-template-columns: calc(75 / 335 * 100%) calc(75 / 335 * 100%) calc(75 / 335 * 100%) calc(75 / 335 * 100%);
+  column-gap: calc(11 / 335 * 100%);
+  row-gap: 12px;
+
+  @include global.mq('pc') {
+    // grid-template-columns: calc(213 / 1160 * 100%) calc(213 / 1160 * 100%) calc(213 / 1160 * 100%) calc(213 / 1160 * 100%);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: calc(40 / 1160 * 100%);
+    row-gap: 50px;
+  }
+}
+
+.users-list__item {
+}

@@ -1,0 +1,72 @@
+@use '../global/' as global;
+
+
+.flow-item {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+
+  & + & {
+    &::before {
+      display: none;
+      position: absolute;
+      content: "";
+      top: 25%;
+      left: -70px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 30px 0 30px 25px;
+      border-color: transparent transparent transparent #c4c4c4;
+    }
+
+    @include global.mq('pc') {
+      &::before {
+        display: block;
+      }
+    }
+  }
+}
+
+.flow-item__content {
+  margin-top: 10px;
+}
+
+.flow-item__title {
+  font-size: 20px;
+  font-weight: global.$font-weight-bold;
+  text-align: center;
+
+  @include global.mq('pc') {
+    font-size: 24px;
+  }
+}
+
+.flow-item__message {
+  margin-top: 5px;
+}
+
+.flow-item__image-set {
+
+}
+
+.flow-item__num {
+  font-family: global.$font-en;
+  font-size: 48px;
+  font-weight: global.$font-weight-bold;
+  color: global.$color-main;
+  line-height: 1;
+}
+
+.flow-item__img {
+  background-color: global.$color-main-light;
+  border-radius: 30px;
+  margin-top: -24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  img {
+    max-width: 200px;
+  }
+}

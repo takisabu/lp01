@@ -1,0 +1,14 @@
+@use '../global/' as global;
+
+
+.question-list {
+  max-width: 920px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.question-list__item {
+  & + & {
+    margin-top: 24px;
+  }
+}

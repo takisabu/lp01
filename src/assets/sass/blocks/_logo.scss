@@ -1,0 +1,11 @@
+@use '../global/' as global;
+
+
+.logo {
+  font-size: 24px;
+  line-height: 1;
+
+  @include global.mq('pc') {
+    font-size: 28px;
+  }
+}

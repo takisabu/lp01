@@ -1,0 +1,43 @@
+@use '../global/' as global;
+
+
+.cta {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #2D2D32;
+
+  @include global.mq('pc') {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.cta__inner {
+  padding-right: global.$layout-padding-header-sp;
+  padding-left: global.$layout-padding-header-sp;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cta__message {
+  font-size: 18px;
+  font-weight: global.$font-weight-bold;
+  text-align: center;
+  color: global.$color-txt-light;
+
+  @include global.mq('tab') {
+    font-size: 24px;
+  }
+
+  @include global.mq('pc') {
+    font-size: 36px;
+  }
+}
+
+.cta__btn {
+  margin-top: 20px;
+
+  @include global.mq('pc') {
+    margin-top: 30px;
+  }
+}

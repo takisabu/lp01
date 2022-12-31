@@ -1,0 +1,6 @@
+@use '../global/' as global;
+
+
+.bold {
+  font-weight: global.$font-weight-bold;
+}

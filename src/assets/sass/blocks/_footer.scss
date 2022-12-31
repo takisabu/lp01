@@ -1,0 +1,137 @@
+@use '../global/' as global;
+
+
+.footer {
+  background-color: global.$color-black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__inner {
+  padding-right: global.$layout-padding-header-sp;
+  padding-left: global.$layout-padding-header-sp;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include global.mq('tab') {
+    max-width: global.$layout-width-header-pc;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__right {
+
+}
+
+.footer__share {
+  color: global.$color-white;
+  font-size: 18px;
+  font-weight: global.$font-weight-bold;
+  text-align: center;
+
+  @include global.mq('tab') {
+    text-align: left;
+  }
+}
+
+.footer__sns-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+
+  @include global.mq('tab') {
+    justify-content: flex-start;
+  }
+}
+
+.footer__sns-item {
+  width: 24px;
+
+  & + & {
+    margin-left: 18px;
+  }
+}
+
+.footer__sns-link {
+  
+}
+
+.footer__left {
+  margin-top: 32px;
+
+  @include global.mq('tab') {
+    margin-top: 0;
+  }
+}
+
+.footer__logo {
+  width: 70px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include global.mq('tab') {
+    margin-left: 0;
+  }
+}
+
+.footer__nav {
+  margin-top: 10px;
+
+  @include global.mq('tab') {
+    margin-top: 10px;
+  }
+}
+
+.footer__nav-list {
+  text-align: center;
+
+  @include global.mq('tab') {
+    display: flex;
+  }
+}
+
+.footer__nav-item {
+  & + & {
+    margin-top: 8px;
+
+    @include global.mq('tab') {
+      margin-top: 0;
+      margin-left: 14px;
+    }
+  }
+}
+
+.footer__nav-link {
+  color: global.$color-white;
+  font-size: 14px;
+  font-weight: global.$font-weight-bold;
+}
+
+.footer__copy {
+  margin-top: 24px;
+
+  @include global.mq('tab') {
+    display: flex;
+    margin-top: 16px;
+  }
+}
+
+.footer__copy-txt {
+  display: block;
+  text-align: center;
+  color: global.$color-white;
+  font-size: 10px;
+
+  @include global.mq('tab') {
+    text-align: left;
+  }
+
+  & + & {
+    @include global.mq('tab') {
+      margin-left: 14px;
+    }
+  }
+}

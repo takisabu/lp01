@@ -1,0 +1,21 @@
+@use '../global/' as global;
+
+
+.hidden-pc {
+  @include global.mq('pc') {
+    display: none;
+  }
+}
+
+.hidden-tab {
+  @include global.mq('tab') {
+    display: none;
+  }
+}
+
+.hidden-sp {
+  @include global.mq('sp') {
+    display: none;
+  }
+}
+

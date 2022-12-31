@@ -1,0 +1,86 @@
+@use '../global/' as global;
+
+
+.btn {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  font-weight: global.$font-weight-bold;
+  padding: 18px 38px;
+  border: 2px solid global.$color-main;
+  border-radius: 30px;
+  transition: all .3s ease;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include global.mq('pc') {
+    padding: 14px 24px;
+  }
+}
+
+.btn--primary {
+  background-color: global.$color-main;
+  color: global.$color-white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
+  font-size: 18px;
+
+  @include global.mq('pc') {
+    &:hover, &:focus {
+      transform: translateY(-8px);
+    }
+  }
+}
+
+.btn--secondary {
+  background-color: global.$color-white;
+  color: global.$color-main;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
+  font-size: 18px;
+
+  @include global.mq('pc') {
+    &:hover, &:focus {
+      transform: translateY(-8px);
+    }
+  }
+}
+
+.btn--price-primary {
+  display: inline-block;
+  background-color: global.$color-white;
+  color: global.$color-txt-base;
+  border: 2px solid global.$color-txt-base;
+  font-size: 16px;
+  padding: 10px 20px;
+
+  @include global.mq('pc') {
+    font-size: 18px;
+    padding: 12px 40px;
+
+    &:hover, &:focus {
+      background-color: global.$color-txt-base;
+      border: 2px solid global.$color-white;
+      color: global.$color-white;
+    }
+  }
+}
+
+.btn--price-secondary {
+  display: inline-block;
+  background-color: global.$color-main;
+  color: global.$color-white;
+  border: 2px solid global.$color-white;
+  font-size: 16px;
+  padding: 10px 20px;
+
+  @include global.mq('pc') {
+    font-size: 18px;
+    padding: 12px 40px;
+
+    &:hover, &:focus {
+      background-color: global.$color-white;
+      color: global.$color-main;
+      border: 2px solid global.$color-main;
+    }
+  }
+}
