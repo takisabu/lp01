@@ -1,9 +1,9 @@
-# Ravek | Web サービス風 LP
+# 架空のWebサービス紹介LP１
 
 ## 概要
 
-Ravek という架空の Web サービスサイトの LP をコーディングしました。  
-デザインはデイトラ卒業生の氷犬さん（[https://twitter.com/icedog_410/](https://twitter.com/icedog_410/)）がデイトラに提供されたものを使用しています。
+架空のWebサービスサイトのLPをコーディングしました。
+デザインはデイトラ卒業生の氷犬さん（https://twitter.com/icedog_410/）がデイトラに提供されたものを使用しています。
 
 ## 作成範囲
 
